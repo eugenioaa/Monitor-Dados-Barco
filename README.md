@@ -11,4 +11,5 @@ O sistema registra e apresenta informações como:
 - Direção e velocidade
 - Vibração do motor
 - Pressão do tanque
+  
 Os dados são enviados continuamente pelo Arduino, armazenados em banco de dados e exibidos em tempo real para facilitar o acompanhamento do estado do barco e apoiar decisões operacionais.
