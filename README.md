@@ -34,17 +34,17 @@ Neste projeto, ele é outra alternativa de visualização de dados, trazendo uma
 O banco de dados PostgreSQL (postgresql.janks.dev.br) serve como a memória persistente e o hub de dados do sistema.
 A tabela dados_barco é o registro que contém todas as informações necessárias para gerar as visualizações e métricas dos dashboards.
 ela possui as seguintes colunas:
-id - um valor inteiro para a identificação das linhas da tabela (chave primária)
-data_hora - um timestamp, que mostra quando os dados foram armazenados no banco
-latitude - float, representando coordenadas
-longitude - float, representando coordenadas
-temperatura_ar - float, representando a temperatura do ar em Celsius
-umidade - float, representando o percentual de umidade
-pressao_atmosferica - float, representando a pressão atmosférica em hPa
-direcao - inteiros, variando entre 1, 2 e 3, representando respectivamente "frente", "esquerda" e "direita"
-velocidade - float, representando a velocidade do barco
-vibracao_motor - float, representando as vibrações do motor
-pressao_tanque - float, mostrando o nível de pressão no tanque de combustível
+- id - um valor inteiro para a identificação das linhas da tabela (chave primária)
+- data_hora - um timestamp, que mostra quando os dados foram armazenados no banco
+- latitude - float, representando coordenadas
+- longitude - float, representando coordenadas
+- temperatura_ar - float, representando a temperatura do ar em Celsius
+- umidade - float, representando o percentual de umidade
+- pressao_atmosferica - float, representando a pressão atmosférica em hPa
+- direcao - inteiros, variando entre 1, 2 e 3, representando respectivamente "frente", "esquerda" e "direita"
+- velocidade - float, representando a velocidade do barco
+- vibracao_motor - float, representando as vibrações do motor
+- pressao_tanque - float, mostrando o nível de pressão no tanque de combustível
 
 
 
