@@ -1,4 +1,4 @@
-# Projeto Final - ENG4033
+# Projeto Final - ENG4033 - OceanMonitor 🚤
 Projeto Final para a turma 3VB de Projeto Programação de Microcontroladores (ENG4033) da PUC-Rio
 
 # Resumo
