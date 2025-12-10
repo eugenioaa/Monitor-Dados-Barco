@@ -2,7 +2,7 @@
 Projeto Final para a turma 3VB de Projeto Programação de Microcontroladores (ENG4033) da PUC-Rio
 
 # Resumo
-Este projeto implementa um sistema completo de monitoramento em tempo real para um barco, integrando sensores físicos, IoT e visualização de dados. Utiliza um Arduino para coleta e envio das medições, um broker MQTT para transporte das mensagens, e ferramentas como Grafana e Streamlit para exibição dos dados em dashboards modernos e intuitivos.
+Este projeto implementa um sistema de monitoramento em tempo real para um barco, integrando sensores físicos, IoT e visualização de dados. Utiliza dois Arduinos para coleta e envio das medições, um broker MQTT para transporte das mensagens, e ferramentas como Grafana e Streamlit para exibição dos dados em dashboards modernos e intuitivos.
 
 O sistema registra e apresenta informações como:
 - Localização (latitude e longitude)
@@ -13,10 +13,11 @@ O sistema registra e apresenta informações como:
 - Vibração do motor
 - Pressão do tanque
   
-Os dados são enviados continuamente pelo Arduino, armazenados em um banco de dados e exibidos em tempo real para facilitar o acompanhamento do estado do barco e apoiar decisões operacionais.
+Os dados são enviados continuamente pelo Arduino, utilizando o protocolo de comunicação de rede de área ampla de baixa potência (LoRaWAN), armazenados em um banco de dados e exibidos em tempo real para facilitar o acompanhamento do estado do barco e apoiar decisões operacionais.
 
 # MQTT
-MQTT é um protocolo de comunicação leve e eficiente, usado para enviar e receber dados entre dispositivos em tempo real, especialmente em aplicações de IoT. Neste projeto, o MQTT é utilizado como uma ferramenta de comunicação entre o Arduino e as GUI's do Grafana e Streamlit, permitindo a visualização dos dados enviados pelos sensores em tempo real.
+MQTT é um protocolo de comunicação leve e eficiente, usado para enviar e receber dados entre dispositivos em tempo real, especialmente em aplicações de IoT. 
+Neste projeto, o MQTT é utilizado como uma ferramenta de comunicação entre o Arduino e as GUI's do Grafana e Streamlit, permitindo a visualização dos dados enviados pelos sensores.
 
 # Node-Red
 O Node-RED consiste em uma ferramenta visual baseada em fluxo que permite integrar, processar e automatizar dados entre dispositivos, APIs e serviços de forma simples e intuitiva.
@@ -26,7 +27,7 @@ No projeto, o Node-Red age como a camada de integração entre os dados enviados
 
 # Grafana
 Grafana é uma plataforma de visualização e monitoramento que permite criar dashboards interativos para analisar dados em tempo real provenientes de diversas fontes.
-Aqui, ele mostra os dados enviados pelo barco
+Aqui, ele mostra os dados enviados pelos sensores do barco.
 
 # Streamlit
 Streamlit é um framework em Python que permite criar aplicações web interativas e dashboards de forma rápida e simples, sem necessidade de conhecimentos avançados de front-end.
