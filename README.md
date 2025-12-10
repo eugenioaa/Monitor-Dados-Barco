@@ -20,7 +20,7 @@ MQTT é um protocolo de comunicação leve e eficiente, usado para enviar e rece
 
 # Node-Red
 O Node-RED consiste em uma ferramenta visual baseada em fluxo que permite integrar, processar e automatizar dados entre dispositivos, APIs e serviços de forma simples e intuitiva.
-No projeto, o Node_red age como a camada de integração entre os dados enviados via MQTT e o banco de dados PostgreSQL.
+No projeto, o Node-Red age como a camada de integração entre os dados enviados via MQTT e o banco de dados PostgreSQL.
 
 # Grafana
 Grafana é uma plataforma de visualização e monitoramento que permite criar dashboards interativos para analisar dados em tempo real provenientes de diversas fontes.
