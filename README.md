@@ -35,7 +35,7 @@ Neste projeto, ele é outra alternativa de visualização de dados, trazendo uma
 
 # Banco de Dados
 O banco de dados PostgreSQL (postgresql.janks.dev.br) serve como a memória persistente e o hub de dados do sistema.
-A tabela dados_barco é o registro que contém todas as informações necessárias para gerar as visualizações e métricas dos dashboards.
+A tabela 'dados_barco' é o registro que contém todas as informações necessárias para gerar as visualizações e métricas dos dashboards.
 ela possui as seguintes colunas:
 - id - um valor inteiro para a identificação das linhas da tabela (chave primária)
 - data_hora - um timestamp, que mostra quando os dados foram armazenados no banco
@@ -48,6 +48,12 @@ ela possui as seguintes colunas:
 - velocidade - float, representando a velocidade do barco
 - vibracao_motor - float, representando as vibrações do motor
 - pressao_tanque - float, mostrando o nível de pressão no tanque de combustível
+
+O banco também possui a tabela secundária 'alertas', com o propósito de guardar as mensagens de alerta enviadas via streamlit e seus respectivos status.
+A tabela possui as colunas:
+- data_hora - timestamp que registra o momento do envio da mensagem
+- mensagem
+- status - possui duas possibilidades: 'concluído' e 'em aberto'
 
 # Esquemático Fritzing
 
