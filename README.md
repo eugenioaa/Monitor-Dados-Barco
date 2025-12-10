@@ -13,7 +13,7 @@ O sistema registra e apresenta informações como:
 - Vibração do motor
 - Pressão do tanque
   
-Os dados são enviados continuamente pelo Arduino, armazenados em banco de dados e exibidos em tempo real para facilitar o acompanhamento do estado do barco e apoiar decisões operacionais.
+Os dados são enviados continuamente pelo Arduino, armazenados em um banco de dados e exibidos em tempo real para facilitar o acompanhamento do estado do barco e apoiar decisões operacionais.
 
 # MQTT
 MQTT é um protocolo de comunicação leve e eficiente, usado para enviar e receber dados entre dispositivos em tempo real, especialmente em aplicações de IoT. Neste projeto, o MQTT é utilizado como uma ferramenta de comunicação entre o Arduino e as GUI's do Grafana e Streamlit, permitindo a visualização dos dados enviados pelos sensores em tempo real.
