@@ -46,5 +46,7 @@ ela possui as seguintes colunas:
 - vibracao_motor - float, representando as vibrações do motor
 - pressao_tanque - float, mostrando o nível de pressão no tanque de combustível
 
+# Esquemático Fritzing
 
+<img width="1475" height="696" alt="image" src="https://github.com/user-attachments/assets/68ce910d-e26b-4f06-9352-10264cfb20f3" />
 
