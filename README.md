@@ -28,7 +28,7 @@ Node-RED é uma ferramenta visual baseada em fluxo que permite integrar, transfo
 
 No projeto, o Node-RED serve como camada de integração entre o MQTT e o banco de dados PostgreSQL, garantindo que todas as mensagens enviadas pelo Arduino sejam processadas e armazenadas corretamente.
 
-*(Esquema do fluxo utilizado:)*  
+*Esquema do fluxo utilizado:*  
 <img width="1033" alt="image" src="https://github.com/user-attachments/assets/04fce427-ebaf-4877-a377-a0da35b1fa69" />
 
 ---
