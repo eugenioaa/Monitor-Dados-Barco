@@ -35,8 +35,7 @@ Grafana é uma plataforma de visualização e monitoramento que permite criar da
 Aqui, ele apresenta as medições recebidas dos sensores do barco, oferecendo uma visualização clara do estado geral da embarcação.
 
 *Dashboard Grafana:* 
-<img width="1917" height="769" alt="image" src="https://github.com/user-attachments/assets/234d515a-61b9-4f2d-8bcf-23ab84680569" />
-
+<img width="1884" height="735" alt="Captura de tela 2025-12-11 005217" src="https://github.com/user-attachments/assets/edec460e-86e7-4082-913b-901e49aa468a" />
 
 ---
 
