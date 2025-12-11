@@ -33,19 +33,19 @@ No projeto, o Node-RED serve como camada de integração entre o MQTT e o banco 
 
 ---
 
-## Grafana 📈
+## Grafana 
 Grafana é uma plataforma de visualização e monitoramento que permite criar dashboards interativos para análise de dados em tempo real.  
 Aqui, ele apresenta as medições recebidas dos sensores do barco, oferecendo uma visualização clara do estado geral da embarcação.
 
 ---
 
-## Streamlit 📊
+## Streamlit 
 Streamlit é um framework Python para criação rápida de aplicações web interativas.  
 Neste projeto, ele fornece uma segunda forma de visualização dos dados, oferecendo métricas, gráficos e envio de alertas de maneira simples e dinâmica.
 
 ---
 
-## Banco de Dados 🎲
+## Banco de Dados 
 O banco de dados PostgreSQL atua como armazenamento persistente e hub central de dados do sistema.  
 A tabela **dados_barco** reúne todas as informações necessárias para geração dos dashboards.  
 Ela contém:
