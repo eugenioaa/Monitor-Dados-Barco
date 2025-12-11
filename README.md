@@ -34,6 +34,10 @@ o Node-RED serve como camada de integração entre o MQTT e o banco de dados Pos
 Grafana é uma plataforma de visualização e monitoramento que permite criar dashboards interativos para análise de dados em tempo real.  
 Aqui, ele apresenta as medições recebidas dos sensores do barco, oferecendo uma visualização clara do estado geral da embarcação.
 
+*Dashboard Grafana:* 
+<img width="1917" height="769" alt="image" src="https://github.com/user-attachments/assets/234d515a-61b9-4f2d-8bcf-23ab84680569" />
+
+
 ---
 
 ## Streamlit  
