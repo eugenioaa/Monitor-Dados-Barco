@@ -23,9 +23,7 @@ Neste projeto, o MQTT atua como intermediário entre os Arduinos e as interfaces
 ---
 
 ## Node-RED 
-Node-RED é uma ferramenta visual baseada em fluxo que permite integrar, transformar e automatizar dados entre dispositivos, APIs e serviços.
-
-No projeto, o Node-RED serve como camada de integração entre o MQTT e o banco de dados PostgreSQL, garantindo que todas as mensagens enviadas pelo Arduino sejam processadas e armazenadas corretamente.
+o Node-RED serve como camada de integração entre o MQTT e o banco de dados PostgreSQL, garantindo que todas as mensagens enviadas pelo Arduino sejam processadas e armazenadas corretamente.
 
 *Esquema do fluxo utilizado:*  
 <img width="1033" alt="image" src="https://github.com/user-attachments/assets/04fce427-ebaf-4877-a377-a0da35b1fa69" />
