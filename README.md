@@ -1,4 +1,4 @@
-# Projeto Final – ENG4033 – OceanMonitor 
+# Projeto Final - ENG4033 - OceanMonitor 
 Projeto final desenvolvido pela turma 3VB da disciplina Projeto e Programação de Microcontroladores (ENG4033) da PUC-Rio.
 
 ## Resumo 
@@ -39,9 +39,10 @@ Aqui, ele apresenta as medições recebidas dos sensores do barco, oferecendo um
 
 ---
 
-## Streamlit 
-Streamlit é um framework Python para criação rápida de aplicações web interativas.  
-Neste projeto, ele fornece uma segunda forma de visualização dos dados, oferecendo métricas, gráficos e envio de alertas de maneira simples e dinâmica.
+## Streamlit  
+Neste projeto o Streamlit fornece uma segunda forma de visualização dos dados, oferecendo métricas, gráficos e envio de alertas de maneira simples e dinâmica.
+<img width="1916" height="804" alt="image" src="https://github.com/user-attachments/assets/19aa47ac-a834-460f-bb9d-806e643f3691" />
+
 
 ---
 
