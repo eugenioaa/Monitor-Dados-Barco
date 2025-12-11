@@ -53,17 +53,17 @@ O banco de dados PostgreSQL atua como armazenamento persistente e hub central de
 A tabela **dados_barco** reúne todas as informações necessárias para geração dos dashboards.  
 Ela contém:
 
-- **id** — inteiro, chave primária  
-- **data_hora** — timestamp da coleta  
-- **latitude** — float  
-- **longitude** — float  
-- **temperatura_ar** — float (°C)  
-- **umidade** — float (%)  
-- **pressao_atmosferica** — float (hPa)  
-- **direcao** — inteiro (1 = frente, 2 = esquerda, 3 = direita)  
-- **velocidade** — float  
-- **vibracao_motor** — float  
-- **pressao_tanque** — float  
+- **id** - inteiro, chave primária  
+- **data_hora** - timestamp da coleta  
+- **latitude** - float  
+- **longitude** - float  
+- **temperatura_ar** - float (°C)  
+- **umidade** - float (%)  
+- **pressao_atmosferica** - float (hPa)  
+- **direcao** - inteiro (1 = frente, 2 = esquerda, 3 = direita)  
+- **velocidade** - float  
+- **vibracao_motor** - float  
+- **pressao_tanque** - float  
 
 Além disso, o banco possui a tabela auxiliar **alertas**, responsável por armazenar mensagens enviadas via Streamlit, contendo:
 
