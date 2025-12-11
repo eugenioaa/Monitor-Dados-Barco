@@ -1,0 +1,171 @@
+[
+    {
+        "id": "bf36d8344d70c1a3",
+        "type": "tab",
+        "label": "Fluxo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e23020e0384187e2",
+        "type": "postgresql",
+        "z": "bf36d8344d70c1a3",
+        "name": "",
+        "query": "INSERT INTO dados_barco (latitude, longitude, temperatura_ar, umidade, pressao_atmosferica, direcao, velocidade, vibracao_motor, pressao_tanque)\nVALUES ($latitude, $longitude, $temperature_2, $relative_humidity_3, $barometric_pressure_4, $analog_in_8, $analog_in_5, $analog_in_6, $analog_in_7);",
+        "postgreSQLConfig": "8fa94cf0d4d5f5c2",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 710,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9936e3a0dc4a36a0",
+        "type": "mqtt in",
+        "z": "bf36d8344d70c1a3",
+        "name": "",
+        "topic": "v3/projeto-iot/devices/44102/up",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "29e07afbe1731fe3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 320,
+        "wires": [
+            [
+                "d085042948398455"
+            ]
+        ]
+    },
+    {
+        "id": "d085042948398455",
+        "type": "change",
+        "z": "bf36d8344d70c1a3",
+        "name": "change",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.uplink_message.decoded_payload",
+                "pt": "msg",
+                "to": "queryParameters",
+                "tot": "msg"
+            },
+            {
+                "t": "move",
+                "p": "queryParameters.gps_1.latitude",
+                "pt": "msg",
+                "to": "queryParameters.latitude",
+                "tot": "msg"
+            },
+            {
+                "t": "move",
+                "p": "queryParameters.gps_1.longitude",
+                "pt": "msg",
+                "to": "queryParameters.longitude",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 320,
+        "wires": [
+            [
+                "e23020e0384187e2",
+                "63cedef0bd1c4013"
+            ]
+        ]
+    },
+    {
+        "id": "63cedef0bd1c4013",
+        "type": "debug",
+        "z": "bf36d8344d70c1a3",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "8fa94cf0d4d5f5c2",
+        "type": "postgreSQLConfig",
+        "name": "",
+        "host": "postgresql.janks.dev.br",
+        "hostFieldType": "str",
+        "port": 5432,
+        "portFieldType": "num",
+        "database": "projeto",
+        "databaseFieldType": "str",
+        "ssl": "true",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": 10,
+        "maxFieldType": "num",
+        "idle": 1000,
+        "idleFieldType": "num",
+        "connectionTimeout": 10000,
+        "connectionTimeoutFieldType": "num",
+        "user": "iot",
+        "userFieldType": "str",
+        "password": "pepcon-garton",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "29e07afbe1731fe3",
+        "type": "mqtt-broker",
+        "name": "projeto",
+        "broker": "mqtt.janks.dev.br",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "5",
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "65a5c442faf4b7cc",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-contrib-postgresql": "0.15.4"
+        }
+    }
+]
