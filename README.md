@@ -38,6 +38,7 @@ Aqui, ele apresenta as medições recebidas dos sensores do barco, oferecendo um
 
 ## Streamlit  
 Neste projeto o Streamlit fornece uma segunda forma de visualização dos dados, oferecendo métricas, gráficos e envio de alertas de maneira simples e dinâmica.
+
 *Dashboard Streamlit:* 
 <img width="1916" height="804" alt="image" src="https://github.com/user-attachments/assets/19aa47ac-a834-460f-bb9d-806e643f3691" />
 
