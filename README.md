@@ -18,8 +18,7 @@ Os dados são transmitidos continuamente pelo Arduino utilizando LoRaWAN, armaze
 ---
 
 ## MQTT 
-MQTT é um protocolo de comunicação leve e eficiente, amplamente utilizado em aplicações IoT para envio e recebimento de dados entre dispositivos.  
-Neste projeto, ele atua como intermediário entre os Arduinos e as interfaces de visualização (Grafana e Streamlit), transportando as medições coletadas pelos sensores.
+Neste projeto, o MQTT atua como intermediário entre os Arduinos e as interfaces de visualização (Grafana e Streamlit), transportando as medições coletadas pelos sensores.
 
 ---
 
