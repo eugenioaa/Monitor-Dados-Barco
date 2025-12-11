@@ -71,6 +71,5 @@ Além disso, o banco possui a tabela auxiliar **alertas**, responsável por arma
 ---
 
 ## Esquemático (Fritzing) 🔎
-<img width="1475" alt="image" src="https://github.com/user-attachments/assets/68ce910d-e26b-4f06-9352-10264cfb20f3" />
-
+<img width="1417" height="652" alt="image" src="https://github.com/user-attachments/assets/80715eef-00d9-4709-9b5a-a3f0897aa501" />
 
